@@ -1,0 +1,30 @@
+{
+  "name": "tfl-bus-board",
+  "version": "1.0.0",
+  "description": "RS3 This project involves creating a website which can output bus arrivals based on a postcode.",
+  "main": "index.js",
+  "dependencies": {
+    "@types/node": "^16.0.1",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "start": "echo \"Error: no start file specified\" && exit 1",
+    "fetchArrivalFromStopCode": "ts-node ArrivalsFetching/TFLArrivalManager.ts",
+    "fetchLatLongFromPostcode": "ts-node PostcodeFetching/PostcodeManager.ts",
+    "fetchStopPointFromLatLong": "ts-node StopPointFetching/StopPointManager.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackParkinsonSoftwire/TFL-Bus-Board.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JackParkinsonSoftwire/TFL-Bus-Board/issues"
+  },
+  "homepage": "https://github.com/JackParkinsonSoftwire/TFL-Bus-Board#readme"
+}
