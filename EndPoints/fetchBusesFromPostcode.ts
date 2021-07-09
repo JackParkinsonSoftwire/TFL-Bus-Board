@@ -13,7 +13,7 @@ export default async function getBusesFromPostcode(postcode:string) {
             arrivals = await getSortedArrivals(stopPoint.naptanId);
             arrivalsStops.push(arrivals);
         }   
-        return arrivals;
+        return arrivalsStops;
     }
     catch (Err){
         throw new Error(`The postcode ${postcode} is invalid.`);
