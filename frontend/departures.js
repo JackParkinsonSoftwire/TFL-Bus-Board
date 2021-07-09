@@ -18,7 +18,7 @@ function callForDepartures(postcodeContainer) {
         var stopsArrivals = JSON.parse(xhttp.response);
         console.log(stopsArrivals);
         // Handle response here using e.g. xhttp.status, xhttp.response, xhttp.responseText
-        
+        document.getElementById("results").innerHTML = "";
         if (stopsArrivals === [] || stopsArrivals === [[]]) {
             var errorMessage = document.createElement("h2");
             errorMessage.innerHTML = "An error has occured. Please try again with a new postcode.";
@@ -28,6 +28,7 @@ function callForDepartures(postcodeContainer) {
                 if (stop.length === 0) {
                     continue;
                 }
+                
                 var nameOfStop = document.createElement("h3");
                 nameOfStop.innerHTML = "Arrivals for stop " + stop[0].stationName + ":";
                 document.getElementById("results").appendChild(nameOfStop);
