@@ -19,4 +19,4 @@ function makeTFLArrivalRequest(stopCode: string){
 async function start(){
     printAllArrivals(await getSortedArrivals("490008660N"));
 }
-start();
+//start();

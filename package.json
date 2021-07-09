@@ -15,7 +15,8 @@
     "start": "echo \"Error: no start file specified\" && exit 1",
     "fetchArrivalFromStopCode": "ts-node ArrivalsFetching/TFLArrivalManager.ts",
     "fetchLatLongFromPostcode": "ts-node PostcodeFetching/PostcodeManager.ts",
-    "fetchStopPointFromLatLong": "ts-node StopPointFetching/StopPointManager.ts"
+    "fetchStopPointFromLatLong": "ts-node StopPointFetching/StopPointManager.ts",
+    "fetchBuses": "ts-node index.ts"
   },
   "repository": {
     "type": "git",

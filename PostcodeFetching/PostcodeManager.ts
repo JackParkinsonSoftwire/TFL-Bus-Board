@@ -17,4 +17,4 @@ async function start() {
     console.log(await getPostcodeLL("N2 9DU"));
 }
 
-start();
+// start();
